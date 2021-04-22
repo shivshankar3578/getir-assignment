@@ -1,5 +1,5 @@
 # getir-assignment
-App is deployed on heroku at https://getir.herokuapp.com/ 
+App is deployed on heroku at https://getir-demo-shiva.herokuapp.com/
 
 ## Developement
 ### setup env
@@ -12,9 +12,9 @@ App is deployed on heroku at https://getir.herokuapp.com/
 cd getir-assignment
 npm install
 ```
-### start local server
+### start server
 ``` npm start```
 
 
 ### test
-``` npm test```
+``` curl --location --request GET 'https://getir-demo-shiva.herokuapp.com/records?startDate=2016-01-01&endDate=2016-12-31&minCount=3000&maxCount=4000' ```
