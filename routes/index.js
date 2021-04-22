@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const moment = require('moment');
+const fs = require('fs');
+const marked = require('marked');
 const RecordModel = mongoose.model("Record");
 
-const next = console.log
 /* GET home page. */
 router.get('/records', function (req, res, next) {
   const { startDate, endDate, minCount, maxCount } = req.query
@@ -48,7 +48,6 @@ router.get('/records', function (req, res, next) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.send({ title: 'Express' });
+  res.send(marked(fs.readFileSync(process.cwd() +"/readme.md").toString()));
 });
-
 module.exports = router;

@@ -12,6 +12,7 @@
     "dotenv": "^8.2.0",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "marked": "^2.0.3",
     "moment": "^2.29.1",
     "mongoose": "^5.10.5",
     "mongoose-validator": "^2.1.0",

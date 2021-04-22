@@ -2,9 +2,8 @@
 App is deployed on heroku at https://getir-demo-shiva.herokuapp.com/
 
 ## Developement
-### setup env
+### setup
 ```export mongo_uri=your_mongodb_connection_string```
-### checkout 
 ```git clone https://github.com/shivshankar3578/getir-assignment```
 ### install dependancies
 
